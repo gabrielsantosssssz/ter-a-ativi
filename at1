@@ -1,0 +1,26 @@
+programa
+{
+    funcao inicio()
+    {
+
+        cadeia medicamento1, medicamento2
+        real valor1, valor2
+
+
+        escreva("Digite o nome do primeiro medicamento: ")
+        leia(medicamento1)
+        escreva("Digite o valor de venda do ", medicamento1, ": ")
+        leia(valor1)
+
+
+        escreva("Digite o nome do segundo medicamento: ")
+        leia(medicamento2)
+        escreva("Digite o valor de venda do ", medicamento2, ": ")
+        leia(valor2)
+
+        
+        escreva("\nDados dos Medicamentos:\n")
+        escreva("Medicamento 1: ", medicamento1, ", Valor: R$ ", valor1, "\n")
+        escreva("Medicamento 2: ", medicamento2, ", Valor: R$ ", valor2, "\n")
+    }
+}
