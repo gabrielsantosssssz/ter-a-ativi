@@ -1,0 +1,40 @@
+programa
+{
+    funcao inicio()
+    {
+        real a, b, angulo, c, cos_theta
+
+        escreva("Digite o valor do lado a (em metros): ")
+        leia(a)
+
+        escreva("Digite o valor do lado b (em metros): ")
+        leia(b)
+
+        escreva("Digite o valor do ângulo entre a e b (em graus): ")
+        leia(angulo)
+
+        cos_theta = calcular_cosseno(angulo)
+
+        c = calcular_raiz_quadrada(a^2 + b^2 - 2 * a * b * cos_theta)
+
+        escreva("O agricultor terá que comprar ", c, " metros de cerca para fechar o triângulo.\n")
+    }
+
+    funcao real calcular_cosseno(real angulo)
+    {
+        real radianos = angulo * 3.14159 / 180
+        // Aproximação de Taylor para cosseno
+        retorne 1 - (radianos^2 / 2) + (radianos^4 / 24) - (radianos^6 / 720)
+    }
+
+    funcao real calcular_raiz_quadrada(real valor)
+    {
+        real estimativa = valor / 2
+        real precisao = 0.00001
+        enquanto ((estimativa * estimativa - valor) > precisao)
+        {
+            estimativa = (estimativa + valor / estimativa) / 2
+        }
+        retorne estimativa
+    }
+}
