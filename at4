@@ -1,0 +1,17 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro hora, minutos, total_minutos
+
+        escreva("Digite o valor da hora: ")
+        leia(hora)
+
+        escreva("Digite o valor dos minutos: ")
+        leia(minutos)
+
+        total_minutos = (hora * 60) + minutos
+
+        escreva("Total de minutos desde o início do dia: ", total_minutos, "\n")
+    }
+}
