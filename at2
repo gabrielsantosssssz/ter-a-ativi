@@ -1,0 +1,22 @@
+programa
+{
+    funcao inicio()
+    {
+        real a, b, d, A1, A2, Ar
+        
+        escreva("Digite o valor de a: ")
+        leia(a)
+        escreva("Digite o valor de b: ")
+        leia(b)
+        escreva("Digite o valor de d: ")
+        leia(d)
+        
+        A1 = a * d
+        A2 = b * d
+        Ar = A1 + A2
+        
+        escreva("Área do retângulo superior (A1): ", A1, "\n")
+        escreva("Área do retângulo inferior (A2): ", A2, "\n")
+        escreva("Área total (Ar): ", Ar, "\n")
+    }
+}
