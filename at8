@@ -1,1 +1,17 @@
+programa
+{
+    funcao inicio()
+    {
+        real cotacao_dolar, valor_dolares, valor_reais
 
+        escreva("Digite a cotação do dólar (em Reais): ")
+        leia(cotacao_dolar)
+
+        escreva("Digite o valor em dólares: ")
+        leia(valor_dolares)
+
+        valor_reais = cotacao_dolar * valor_dolares
+
+        escreva("O valor equivalente em Reais é: ", valor_reais, "\n")
+    }
+}
